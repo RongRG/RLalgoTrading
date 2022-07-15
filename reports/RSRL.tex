@@ -1,0 +1,90 @@
+\include{RSRL.preambel}
+
+\title{Risk-sensitive Distributional Reinforcement Learning for Algorithmic Trading}
+\author{Rong Guo, Egemen Okur, Klaus Obermayer}
+
+% ==============================================================================
+
+\begin{document}
+\maketitle
+
+\listoftodos
+
+% ==============================================================================
+\section{Domain Background}
+
+\begin{center}
+\begin{longtable}{| m{4cm} | m{5cm} | m{5cm} | }
+\hline
+\textbf{Paper} & \textbf{Summary} & \textbf{Drawbacks w.r.t ours}\\
+\hline
+\hline
+RSQ \citep{shen_risk-sensitive_2014, shen_risk-averse_2014} & Utility function over TD error, convergence and optimality guarantees & Tabular Q; Trading on limit order market \\
+\hline
+Ensemble actor-critic \citep{yang_deep_2020} & Ensemble trained by returns but the winner is selected by Sharp ration & Add-hoc risk strategies\\
+\hline
+Exponential Bellman Equation \citep{fei_exponential_nodate} & Theoretical guarantees; An instantiation of distributional RL through the MGF of rewards & theoretical paper, no application \\
+\hline
+\end{longtable}
+\end{center}
+
+
+% ==============================================================================
+\section{Problem/Solution Statement}
+
+~\\
+~\\
+
+% ==============================================================================
+\section{Dataset \& Input \& Metric}
+\begin{enumerate}
+\item
+	\todo[inline]{Environment/Experiments.}
+	\begin{itemize}
+	\item
+	portfolio allocation problem
+	\end{itemize}
+
+\item
+	\todo[inline]{Benchmark model \& results, which contextualises existing methods/knowledge in the domain.}
+	\begin{itemize}
+	\item
+	SOTA: How are the existing work related to our methods? 
+	\item
+	Experiments contrasting risk-neutral with risk-sensitive RL methods
+	\end{itemize}
+\item
+	\todo[inline]{Metric: objectively compare the solution model with the benchmark model.}
+	\begin{itemize}
+	\item
+	Returns vs. Risk
+	\item
+	Sharp ration, CVaR, etc.
+	\item
+	Theoretical guarantees and insights on convergence and optimatliy
+	\end{itemize}
+\end{enumerate}
+
+% ==============================================================================
+\section{Theoretical workflow}
+\subsection{End-to-end formalization}
+
+~\\
+~\\
+
+% ==============================================================================
+\section{Network Architecture}
+\begin{itemize}
+\item
+MLP
+\end{itemize}
+
+
+%\newpage
+% ==============================================================================
+%\def\FormatName#1{\IfSubStr{#1}{B\"ohmer}{\textbf{#1}}{#1}}
+\def\FormatName#1{#1}
+\bibliographystyle{highlight}
+{\footnotesize\bibliography{references}}
+
+\end{document}
