@@ -25,16 +25,23 @@ Ensemble actor-critic \citep{yang_deep_2020} & Ensemble trained by returns but t
 \hline
 Exponential Bellman Equation \citep{fei_exponential_nodate} & Theoretical guarantees; An instantiation of distributional RL through the MGF of rewards & theoretical paper, no application \\
 \hline
+Risk-senstive Distributional Q \citep{bodnar_quantile_2020, dabney_implicit_2018} & Various risk measures; Discrete and continuous action space Q-learning & robotics\\
+\hline
 \end{longtable}
 \end{center}
 
 
 % ==============================================================================
-\section{Problem/Solution Statement}
+\section{Problem and Solution Statement}
 
-~\\
-~\\
+\subsection{Portfolio Optimization as A Reinforcement Learning Problem}
 
+In many financial decision making tasks, expected returns fail to describe the real outcomes. Outcomes must be
+reasoned through considering not only the expected value, but also volatility and risk. The outcome (return) is a random variable.\\
+
+Deep reinforcement learning has shown to be a useful too for portfolio optimization \citep{zhang_deep_2020}. The recent distributional reinforcement learning \citep{bellemare_distributional_2017, dabney_distributional_2018} endows policies with risk-sensitive strategies, by taking the entire value distributions into account.\\
+
+\textit{Technical novelty? not all original, but are rather an interesting use-case/application of existing methods and are a useful contribution.}
 % ==============================================================================
 \section{Dataset \& Input \& Metric}
 \begin{enumerate}
@@ -66,11 +73,13 @@ Exponential Bellman Equation \citep{fei_exponential_nodate} & Theoretical guaran
 \end{enumerate}
 
 % ==============================================================================
-\section{Theoretical workflow}
+\section{Theoretical Workflow}
+
 \subsection{End-to-end formalization}
 
-~\\
-~\\
+\subsection{Using Distributional RL for Risk Awareness}
+
+\subsection{Convergence Analysis}
 
 % ==============================================================================
 \section{Network Architecture}
